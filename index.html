@@ -21,7 +21,7 @@
 
         <ul v-for="producto in productos">
             <li>
-                <input type="number" v-model="producto.cantidad">
+                <input type="number" v-model.number="producto.cantidad">
                 {{producto.nombre}} | {{producto.cantidad}}
                 <button @click="producto.cantidad++">+</button>
                 <button @click="producto.cantidad--">-</button>
